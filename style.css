@@ -1,0 +1,17 @@
+body {
+    margin: o auto;
+    background-color: #2A2C2F;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+.header_top {
+    display: flex;
+    
+}
+
+
+@media screen and (max-width: 319px){
+
+}
+    
