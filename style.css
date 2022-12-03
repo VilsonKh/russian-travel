@@ -1,17 +1,437 @@
 body {
-    margin: o auto;
     background-color: #2A2C2F;
     color: #ffffff;
     font-family: "Inter", sans-serif;
+    min-width: 320px;
 }
 
+/* HEADER */
 .header_top {
     display: flex;
-    
+    justify-content: space-between; 
+    min-width: 288px; 
+    padding: 16px 16px 0 16px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.header_lang_ru,
+.header_lang_en {
+    padding-top: 14px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.header_lang_ru::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 1px;
+    background-color: #ffffff;
 }
 
 
-@media screen and (max-width: 319px){
+.header_title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.header_subtitle {
+    width: 90vw;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.header_caption{
+    margin: 0;
+}
+
+.caption_img {
+    min-width: 320px;
+    margin-bottom: 8px;
+}
+
+.caption_description {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+    margin-left: 16px;
+}
+
+.about {
+    padding: 0 16px 0 16px;
+}
+
+.about_title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
+.about_desctiption {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    margin-bottom: 34px;
+}
+
+.about_digits {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 64px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    margin-bottom: 64px;
+    padding: 0 16px 0 16px;
+}
+.places {
+    padding: 0 16px 0 16px;
+}
+
+.places_title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 32px;
+    margin-top: 50px;
+}
+
+.places_source {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    color: #AAAAAA;
+    margin-bottom: 12px;
+}
+
+.places_link {
+    margin-bottom: 32px;
+    }
+
+.link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.places_image {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.places_desctiption_1 {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.places_desctiption_2 {
+    margin-top: 25px;
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.footer_image {
+    margin-top: 66px;
+    background-image: url(/russian-travel/img/__background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.image_title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    z-index: 1;
+}
+
+.image_subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-left: 16px;
+    margin-bottom: 48px;
+}
+
+.footer_nav a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer_copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+/* .kurshskaya_desctiption {
+    margin: 32px 16px 25px 16px; */
+
+@media screen and (min-width: 752px){
+/* HEADER */
+.header_top {
+    display: flex;
+    justify-content: space-between; 
+    min-width: 288px; 
+    padding: 28px 24px 0 24px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.header_logo {
+    width: 176px;
+    height: 52px;
+}
+
+.header_lang_ru,
+.header_lang_en {
+    padding-top: 14px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.header_lang_ru::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.header_title {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.header_subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 83.333vw;
+}
+
+.header_caption{
+    margin: 0;
+}
+
+.caption_img {
+    width: 100vw;
+    margin-bottom: 8px;
+}
+
+.caption_description {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 88px;
+    margin-left: 16px;
+}
+
+.about {
+    padding: 0 16px 0 16px;
+}
+
+.about_title {
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+    margin-bottom: 40px;
+    width: 93.750vw;
+}
+
+.about_desctiption {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    margin-bottom: 33px;
+}
+
+.about_digits {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 88px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 64px;
+    padding: 0 24px 0 24px;
+}
+
+.gallery_img {
+    width: 100%;
+}
+
+
+.places {
+    padding: 0 16px 0 16px;
+    display: grid;
+    grid-template-columns: 240px 342px;
+}
+
+.places_title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 32px;
+    margin-top: 50px;
+}
+
+.places_source {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    color: #AAAAAA;
+    margin-bottom: 12px;
+}
+
+.places_link {
+    margin-bottom: 32px;
+    }
+
+.link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.places_image {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.places_desctiption_1 {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.places_desctiption_2 {
+    margin-top: 25px;
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.footer_image {
+    margin-top: 66px;
+    background-image: url(/russian-travel/img/__background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.image_title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    z-index: 1;
+}
+
+.image_subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-left: 16px;
+    margin-bottom: 48px;
+}
+
+.footer_nav a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer_copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
 
 }
     

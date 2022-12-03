@@ -6,21 +6,25 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/russian-travel/style.css">
+        <link rel="stylesheet" href="/russian-travel/reset.css">
     </head>
     <body>
         <div class="wrapper">
             <header class="header">
                 <div class="header_top">
                     <img class="header_logo" src="/russian-travel/img/__logo.png" alt="Россия">
-                    <button class="header_lang_ru">Ru</button>
-                    <button class="header_lang_en">En</button>
+                    <div class="header_change_lang">
+                        <button class="header_lang_ru">Ru</button>
+                      <button class="header_lang_en">En</button>
+                    </div>
                 </div>
                 <h1 class="header_title">Путешествия по России</h1>
                 <h2 class="header_subtitle">Настоящая страна не в выпусках новостей, а здесь.</h2>
                 <figure class="header_caption">
-                    <img class="header_img" src="/russian-travel/img/kalegin-michail-179870-unsplash.png" alt="Девушка_в поезде">
-                    <figcaption class="header_description">ваша полка - верхняя</figcaption>
+                    <img class="caption_img" src="/russian-travel/img/kalegin-michail-179870-unsplash.png" alt="Девушка_в поезде">
+                    <figcaption class="caption_description">ваша полка - верхняя</figcaption>
                 </figure>
             </header>
             <main class="content">
@@ -38,69 +42,72 @@
                         Аэропортов 241</p>
                 </section>
                 <section class="gallery">
-                    <img src="/russian-travel/img/gallery/__item-11.png" alt="train">
-                    <img src="/russian-travel/img/gallery/__item-10.png" alt="mountain">
-                    <img src="/russian-travel/img/gallery/__item-9.png" alt="wolf">
-                    <img src="" alt="fog">
-                    <img src="/russian-travel/img/gallery/__item-8.png" alt="iced baikal">
-                    <img src="/russian-travel/img/gallery/__item-7.png" alt="mountain_2">
-                    <img src="/russian-travel/img/gallery/__item-6.png" alt="crosswalk">
-                    <img src="/russian-travel/img/gallery/__item-4.png" alt="mountain_3">
-                    <img src="/russian-travel/img/gallery/__item-3.png" alt="mountain_4">
-                    <img src="/russian-travel/img/gallery/__item-2.png" alt="mountain_5">
-                    <img src="/russian-travel/img/gallery/__item-1.png" alt="mountain_6">
-                    <img src="/russian-travel/img/gallery/__item.png" alt="mountain_7">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-11.png" alt="train">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-10.png" alt="mountain">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-9.png" alt="wolf">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-8.png" alt="iced baikal">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-7.png" alt="mountain_2">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-6.png" alt="crosswalk">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-5.png" alt="mountain_2">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-4.png" alt="mountain_3">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-3.png" alt="mountain_4">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-2.png" alt="mountain_5">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item-1.png" alt="mountain_6">
+                    <img class="gallery_img" src="/russian-travel/img/gallery/__item.png" alt="mountain_7">
                 </section>
                 <section class="places">
                     <div class="places_kurshskaya">
-                        <h2 class="kurshskaya_title">Куршская коса</h2>
-                        <p class="kurshskaya_source">URL</p>
-                        <p><a class="kurshskaya_link" href="#">park-kosa.ru</a></p>
-                        <img class="kurshskaya_image" src="/russian-travel/img/__image.png" alt="">
-                        <p class="kurshskaya_desctiption">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная природная зона 
+                        <h2 class="places_title">Куршская коса</h2>
+                        <p class="places_source">URL</p>
+                        <p class="places_link"><a class="link" href="#">park-kosa.ru</a></p>
+                        <img class="places_image" src="/russian-travel/img/__image.png" alt="">
+                        <p class="places_desctiption_1">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная природная зона 
                         на краю российского анклава. </p>
-                        <p class="kurshskaya_desctiption">
+                        <p class="places_desctiption_2">
                         На этом Калининградская область не заканчивается. 
                         Для путешественника и исследователя там же по соседству — самая западная точка России, Балтийская коса, — и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
                     </div>
                     <div class="places_kolskiy">
-                        <h2 class="kolskiy_title">Кольский</h2>
-                        <p class="kolskiy_source">URL</p>
-                        <p><a class="kolskiy-link" href="#">National Geographic</a></p>
-                        <img class="kolskiy-image" src="/russian-travel/img/__image-2.png" alt="">
-                        <p>Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.</p>
-                        <p>Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.</p>
+                        <h2 class="places_title">Кольский</h2>
+                        <p class="places_source">URL</p>
+                        <p class="places_link"><a class="link" href="#">National Geographic</a></p>
+                        <img class="places_image" src="/russian-travel/img/__image-2.png" alt="">
+                        <p class="places_desctiption_1">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.</p>
+                        <p class="places_desctiption_2">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.</p>
                     </div>
                     <div class="places_altai">
-                        <h2 class="altai_title">Алтай</h2>
-                        <p class="altai_source">URL</p>
-                        <p><a class="altai-link" href="#">YouTube</a></p>
-                        <img class="altai-img" src="/russian-travel/img/__image-3.png" alt="">
-                        <p class="altai_desctiption">Алтай — одно из красивейших мест в России. В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
-                        <p class="altai_description" >Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
+                        <h2 class="places_title">Алтай</h2>
+                        <p class="places_source">URL</p>
+                        <p class="places_link"><a class="link" href="#">YouTube</a></p>
+                        <img class="places_image" src="/russian-travel/img/__image-3.png" alt="">
+                        <p class="places_desctiption_1">Алтай — одно из красивейших мест в России. В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
+                        <p class="places_desctiption_2" >Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
                     </div>
                     <div class="places_baikal">
-                        <h2 class="baikal_title" >Зимний Байкал</h2>
-                        <p class="baikal_source">URL</p>
-                        <p><a class="baikal_link" href="#">https://vk.com/baikalmile</a></p>
-                        <img class="baikal_img" src="/russian-travel/img/__image-3 2.png" alt="">
-                        <p>Всем известен Байкал как крупнейшее озеро в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.</p>
-                        <p>Конечно, это всё так. Но Байкал ещё идеальное место для 
+                        <h2 class="places_title" >Зимний Байкал</h2>
+                        <p class="places_source">URL</p>
+                        <p class="places_link"><a class="link" href="#">https://vk.com/baikalmile</a></p>
+                        <img class="places_image" src="/russian-travel/img/__image-3 2.png" alt="">
+                        <p class="places_desctiption_1">Всем известен Байкал как крупнейшее озеро в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.</p>
+                        <p class="places_desctiption_2">Конечно, это всё так. Но Байкал ещё идеальное место для 
                             соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя 
                             к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
                     </div>
                     <div class="places_karelia">
-                        <h2 class="karelia_title">Карелия</h2>
-                        <p class="karelia_source">URL</p>
-                        <p><a class="karelia_link" href="#">http://vodlozero.ru/</a></p>
-                        <img class="karelia_link" src="/russian-travel/img/__image-4.png" alt="">
-                        <p class="karelia_description">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
+                        <h2 class="places_title">Карелия</h2>
+                        <p class="places_source">URL</p>
+                        <p class="places_link"><a class="link" href="#">http://vodlozero.ru/</a></p>
+                        <img class="places_image" src="/russian-travel/img/__image-4.png" alt="">
+                        <p class="places_desctiption_1">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
                     </div>
                 </section>
             </main>
             <footer class="footer">
-                <img class="footer_image" src="/russian-travel/img/__background.png" alt="">
-                <ul class="footer nav">
+                <div class="footer_image">
+                    <p class="image_title">До Байкала <br> «на собаках»</p>
+                    <p class="image_subtitle">По мотивам учебной темы о Транссибе - путешествие от сталицы до Байкала на электричках.</p>
+                </div>
+                <ul class="footer_nav">
                     <li class="maps"><a href="#">Карты</a></li>
                     <li class="weather"><a href="">Погода</a></li>
                     <li class="schedule"><a href="">Расписание</a></li>
