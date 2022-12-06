@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="/russian-travel/style.css">
+        <link rel="stylesheet" href="/russian-travel/style_v2.css">
         <link rel="stylesheet" href="/russian-travel/reset.css">
     </head>
     <body>
@@ -56,8 +56,8 @@
                     <img class="gallery_img" src="/russian-travel/img/gallery/__item.png" alt="mountain_7">
                 </section>
                 <section class="places">
-                    <div class="places_kurshskaya">
-                        <h2 class="places_title">Куршская коса</h2>
+                    <div class="places_box">
+                        <h2 class="places_title">Куршская<br> коса</h2>
                         <p class="places_source">URL</p>
                         <p class="places_link"><a class="link" href="#">park-kosa.ru</a></p>
                         <img class="places_image" src="/russian-travel/img/__image.png" alt="">
@@ -67,7 +67,7 @@
                         На этом Калининградская область не заканчивается. 
                         Для путешественника и исследователя там же по соседству — самая западная точка России, Балтийская коса, — и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
                     </div>
-                    <div class="places_kolskiy">
+                    <div class="places_box">
                         <h2 class="places_title">Кольский</h2>
                         <p class="places_source">URL</p>
                         <p class="places_link"><a class="link" href="#">National Geographic</a></p>
@@ -75,7 +75,7 @@
                         <p class="places_desctiption_1">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.</p>
                         <p class="places_desctiption_2">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.</p>
                     </div>
-                    <div class="places_altai">
+                    <div class="places_box">
                         <h2 class="places_title">Алтай</h2>
                         <p class="places_source">URL</p>
                         <p class="places_link"><a class="link" href="#">YouTube</a></p>
@@ -83,7 +83,7 @@
                         <p class="places_desctiption_1">Алтай — одно из красивейших мест в России. В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
                         <p class="places_desctiption_2" >Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
                     </div>
-                    <div class="places_baikal">
+                    <div class="places_box">
                         <h2 class="places_title" >Зимний Байкал</h2>
                         <p class="places_source">URL</p>
                         <p class="places_link"><a class="link" href="#">https://vk.com/baikalmile</a></p>
@@ -93,7 +93,7 @@
                             соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя 
                             к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
                     </div>
-                    <div class="places_karelia">
+                    <div class="places_box">
                         <h2 class="places_title">Карелия</h2>
                         <p class="places_source">URL</p>
                         <p class="places_link"><a class="link" href="#">http://vodlozero.ru/</a></p>
@@ -104,17 +104,21 @@
             </main>
             <footer class="footer">
                 <div class="footer_image">
-                    <p class="image_title">До Байкала <br> «на собаках»</p>
-                    <p class="image_subtitle">По мотивам учебной темы о Транссибе - путешествие от сталицы до Байкала на электричках.</p>
+                   
+                         <p class="image_title">До Байкала <br> «на собаках»</p>
+                         <p class="image_subtitle">По мотивам учебной темы о Транссибе <br> — путешествие от сталицы до Байкала на электричках.</p>
                 </div>
-                <ul class="footer_nav">
-                    <li class="maps"><a href="#">Карты</a></li>
-                    <li class="weather"><a href="">Погода</a></li>
-                    <li class="schedule"><a href="">Расписание</a></li>
-                    <li class="calendar"><a href="">Календарь</a></li>
-                    <li class="travelings"><a href="">Путешествия</a></li>
-                </ul>
-                <p class="footer_copyright">&copy 2022. Вильсон Хечикянц</p>
+                
+                   <div class="footer_wrapper"> 
+                     <ul class="footer_nav">
+                            <li class="maps"><a href="#">Карты</a></li>
+                            <li class="weather"><a href="">Погода</a></li>
+                            <li class="schedule"><a href="">Расписание</a></li>
+                            <li class="calendar"><a href="">Календарь</a></li>
+                            <li class="travelings"><a href="">Путешествия</a></li>
+                     </ul>
+                     <p class="footer_copyright">&copy 2022. Вильсон Хечикянц</p>
+                  </div>
             </footer>
         </div>    
     </body>
