@@ -4,7 +4,8 @@ body {
     font-family: "Inter", sans-serif;
     min-width: 320px;
     max-width:1280px;
-    padding: 16px 16px 24px 16px;
+    padding: 1rem 1rem 1.5rem 1rem;
+    margin: 0 auto;
 }
 
     /* HEADER */
@@ -103,6 +104,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 34px;
+    max-width: 720px;
 }
 
 .about_digits {
@@ -116,13 +118,16 @@ body {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 12px;
+    grid-template-columns: repeat(auto-fill, 340px) ;
+    gap: 12px;  
+    justify-content: center;
 }
 
 .gallery_img {
     width: 100%;
     height: 100%; 
+    max-width: 340px;  
+    
 }
 
 /* PLACES */
@@ -137,20 +142,19 @@ body {
 
 .places_box{
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .places_box:last-child {
     margin-bottom: 0;
 }
 
-
 .places_title {
     font-weight: 900;
     font-size: calc(32px + 10 * ((100vw - 320px) / (768 - 320)));
     line-height: calc(35px + 11 * ((100vw - 320px) / (768 - 320)));
     margin-bottom: 32px;
-   
-    
 }
 
 .places_source {
@@ -172,6 +176,7 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;  
+
 }
 
 .link:hover {
@@ -180,9 +185,9 @@ body {
 
 .places_image {
     min-width: 320px;
+    max-width: 340px;
     width: 100%;
-    margin-left: -16px;
-    margin-right: -16px; 
+    
 }
 
 .places_desctiption_1 {
@@ -190,6 +195,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 163%;
+    max-width: 352px;
 }
 
 .places_desctiption_2 {
@@ -200,42 +206,67 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 163%;
+    width: 90vw;
+    max-width: 352px;
 }
 
-/* FOOTER */
-
-.footer_image {
-    background-image: url(/russian-travel/img/__background.png);
+.baikal_image {
+    background-image: url(img/__background.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 64px;
+    position: relative;
+    background-size: cover;
     margin-left: -16px;
     margin-right: -16px;
-    width: 320px;
-    height: 200px;
+    min-height: calc(100vw * 640 / 1024);
+    padding: calc(4rem + (100vw - 320px) / (768 - 320) * (92 - 66)) 0 calc(4rem + (100vw - 320px) / (768 - 320) * (92 - 64));
 }
 
-.image_title {
+/* BAIKAL */
+
+.baikal {
+    margin-bottom: 4rem;
+}
+
+.baikal_overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.2;    
+}
+
+.baikal_image:hover .baikal_overlay{
+    background-color: #2A2C2F;
+    opacity: 0.8;
+    transition: opacity .2s linear;
+}
+
+.baikal_title {
     font-weight: 900;
     font-size: calc(32px + 40 * ((100vw - 320px) / (768 - 320)));
     line-height: calc(35px + 41 * ((100vw - 320px) / (768 - 320)));
     text-align: center;
-    margin-top: 32px;
+    margin-top: 1rem;
     margin-bottom: 16px;
     z-index: 2;   
+    color: #FFFFFF;
 }
 
-.image_subtitle {
+.baikal_subtitle {
     font-weight: 400;
     font-size: calc(14px + 4 * ((100vw - 320px) / (768 - 320)));
     line-height: calc(16px + 6 * ((100vw - 320px) / (768 - 320)));
     text-align: center;
     width: 90vw;
     z-index: 2;
+    color: #FFFFFF;
 }
+
+/* FOOTER */
 
 .footer_nav {
     display: flex;
@@ -264,10 +295,14 @@ body {
 
     .header_title {
         margin-bottom: 32px;
+        font-size: 96px;
+        line-height: 100px;
     }
 
     .header_subtitle {
         margin-bottom: 56px;
+        font-size: 30px;
+        line-height: 36px;
     }
 
     .caption_img {
@@ -297,7 +332,6 @@ body {
         display: grid;
         grid-template-columns: 340px 352px;
         column-gap: 28px;
-
         margin-bottom: 73px;
 
     }
@@ -323,17 +357,21 @@ body {
 
     .places_image {
         grid-area: 3/1/5/2;
-        margin: 0 auto;
         width: 100%;
+        max-width: 440px;
     }
 
     .places_desctiption_1 {
         margin: 0;
+        max-width: 456px;
+        width: calc(22rem + 104 * ((100vw - 768px) / (1024 - 768)));
     }
     
     .places_desctiption_2 {
         margin: 0;
         margin-top: 25px;
+        width: calc(22rem + 104 * ((100vw - 768px) / (1024 - 768)));
+        max-width: 456px;
     }
 
     .footer_image {
@@ -404,11 +442,19 @@ body {
         line-height: 36px;
     }
 
+    .header_caption {
+        text-align: center;
+    }
+
     .caption_img {
         width: 928px;
         margin: 0 auto 8px auto;
     }
     
+    .caption_description {
+        text-align: left;
+    }
+
     .about_title {
         font-size: 54px;
         line-height: 58px;
@@ -443,6 +489,11 @@ body {
         line-height: 76px;
     }
 
+    .places_desctiption_1,
+    .places_desctiption_2 {
+        width: calc(22rem + 28 * ((100vw - 1024)/(1280 - 1024)));
+    }
+
     .footer_image {
         width: 1024px;
         height: 640px;
@@ -469,6 +520,7 @@ body {
 
         .caption_img {
             width: 984px;
+            
         }
 
         .gallery {
