@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: space-between; 
     margin-bottom: 48px;
+    max-width: 1184px;
 }
 
 .header_logo {
@@ -58,20 +59,234 @@ body {
 .header_subtitle {
     min-width: 288px;
     max-width: 640px;
+    width: 83%;
+    margin: 0 auto;
     font-weight: 400;
     font-size: calc(16px + 14 * ((100vw - 320px) / (768 - 320)));
     line-height: calc(20px + 16 * ((100vw - 320px) / (768 - 320)));
     text-align: center;
-    margin: 0 auto;
+    
     margin-bottom: 40px;
 }
 
 /* CAPTION */
 
-.header_caption{
-    margin: 0 auto;
-    
+.section{
+  margin-bottom: 64px;
+  
 }
+
+.section_img {
+    background-image: url(img/kalegin-michail-179870-unsplash.jpg);
+    background-size: 100% 100%;
+    padding: calc(40px + (100vw - 320px) / (768 - 320) * (100 - 42)) 0 calc(80px + (100vw - 320px) / (768 - 320) * (204 - 85)); 
+    margin: auto -16px;
+    max-height: 480px;
+}
+
+.section_legend {
+
+}
+
+.lead__path {
+    animation: leading 20s linear forwards;
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    stroke-dasharray: 1390;
+    stroke-dashoffset: 1390;
+  }
+
+  @keyframes leading {
+    to {
+      stroke-dashoffset: 2780;
+    }
+  }
+
+  @keyframes appearance {
+    from {
+        opacity: 0;
+    } 
+    
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .lead__town:nth-child(2) {
+    animation: appearance 1s linear forwards;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(3) {
+    animation: appearance 1s linear forwards 1.8s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(4) {
+    animation: appearance 1s linear forwards 4.5s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(5) {
+    animation: appearance 1s linear forwards 5.6s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(6) {
+    animation: appearance 1s linear forwards 7.5s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(7) {
+    animation: appearance 1s linear forwards 8.9s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(8) {
+    animation: appearance 1s linear forwards 11.9s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(9) {
+    animation: appearance 1s linear forwards 13s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(10) {
+    animation: appearance 1s linear forwards 14.1s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(11) {
+    animation: appearance 1s linear forwards 15.8s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(12) {
+    animation: appearance 1s linear forwards 18.8s;
+    opacity: 0;
+  }
+  
+  .lead__town:nth-child(13) {
+    animation: appearance 1s linear forwards 19.9s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(14) {
+    animation: appearance 1s linear forwards;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(15) {
+    animation: appearance 1s linear forwards 1.8s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(16) {
+    animation: appearance 1s linear forwards 1.8s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(17) {
+    animation: appearance 1s linear forwards 4.5s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(18) {
+    animation: appearance 1s linear forwards 4.5s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(19) {
+    animation: appearance 1s linear forwards 5.6s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(20) {
+    animation: appearance 1s linear forwards 5.6s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(21) {
+    animation: appearance 1s linear forwards 7.5s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(22) {
+    animation: appearance 1s linear forwards 7.5s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(23) {
+    animation: appearance 1s linear forwards 8.9s;
+    opacity: 0;
+  }
+  .lead__town-point:nth-child(24) {
+    animation: appearance 1s linear forwards 8.9s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(25) {
+    animation: appearance 1s linear forwards 11.9s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(26) {
+    animation: appearance 1s linear forwards 11.9s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(27) {
+    animation: appearance 1s linear forwards 13s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(28) {
+    animation: appearance 1s linear forwards 13s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(29) {
+    animation: appearance 1s linear forwards 14.1s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(30) {
+    animation: appearance 1s linear forwards 14.1s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(31) {
+    animation: appearance 1s linear forwards 15.8s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(32) {
+    animation: appearance 1s linear forwards 15.8s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(33) {
+    animation: appearance 1s linear forwards 18.8s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(34) {
+    animation: appearance 1s linear forwards 18.8s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(35) {
+    animation: appearance 1s linear forwards 19.9s;
+    opacity: 0;
+  }
+  
+  .lead__town-point:nth-child(36) {
+    animation: appearance 1s linear forwards 19.9s;
+    opacity: 0;
+  }
+
 
 .caption_img {
     min-width: 320px;
@@ -133,17 +348,14 @@ body {
 /* PLACES */
 
 .places {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     margin-top: 64px;
     margin-bottom: 66px ;
 }
 
 .places_box{
     margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
 }
 
 .places_box:last-child {
@@ -210,6 +422,12 @@ body {
     max-width: 352px;
 }
 
+/* BAIKAL */
+
+.baikal {
+    margin-bottom: 4rem;
+}
+
 .baikal_image {
     background-image: url(img/__background.jpg);
     background-repeat: no-repeat;
@@ -221,13 +439,7 @@ body {
     margin-left: -16px;
     margin-right: -16px;
     min-height: calc(100vw * 640 / 1024);
-    padding: calc(4rem + (100vw - 320px) / (768 - 320) * (92 - 66)) 0 calc(4rem + (100vw - 320px) / (768 - 320) * (92 - 64));
-}
-
-/* BAIKAL */
-
-.baikal {
-    margin-bottom: 4rem;
+    padding: calc(2.01rem + (100vw - 320px) / (768 - 320) * (115 - 33)) 0 calc(2.01rem + (100vw - 320px) / (768 - 320) * (115 - 33));
 }
 
 .baikal_overlay {
@@ -250,7 +462,6 @@ body {
     font-size: calc(32px + 40 * ((100vw - 320px) / (768 - 320)));
     line-height: calc(35px + 41 * ((100vw - 320px) / (768 - 320)));
     text-align: center;
-    margin-top: 1rem;
     margin-bottom: 16px;
     z-index: 2;   
     color: #FFFFFF;
@@ -305,12 +516,18 @@ body {
         line-height: 36px;
     }
 
-    .caption_img {
-        margin-left: -24px;
-        margin-right: -24px;
+    .section {
+        margin-bottom: 88px;
     }
 
-    .caption_description {
+    .section_img {
+        margin-left: -24px;
+        margin-right: -24px;
+        max-width: 928px;
+        padding: calc(100px + (100vw - 768px) / (1024 - 768) * (121 - 100)) 0 calc(200px + (100vw - 768px) / (1024 - 768) * (121 - 100)); 
+    }
+
+    .section_description {
         margin-bottom: 88px;
     }
 
@@ -446,18 +663,26 @@ body {
         text-align: center;
     }
 
-    .caption_img {
+    .section {
+        margin-bottom: 92px;
+    }   
+    
+    .section_img {
         width: 928px;
         margin: 0 auto 8px auto;
     }
     
-    .caption_description {
+    .section_description {
         text-align: left;
     }
 
     .about_title {
         font-size: 54px;
         line-height: 58px;
+    }
+
+    .about_digits {
+        margin-bottom: 92px;
     }
 
     .about {
@@ -514,13 +739,13 @@ body {
         }
 
         .header_top {
+            margin-bottom: 56px;
             margin-left: -100px;
             margin-right: -100px;
         }
 
-        .caption_img {
-            width: 984px;
-            
+        .header_subtitle {
+            margin-bottom: 64px;
         }
 
         .gallery {
@@ -547,12 +772,4 @@ body {
         }
 
     }
-
-
-
-
-
-
-
-
 }
