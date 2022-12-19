@@ -431,21 +431,31 @@ body {
   /* COVER */
 
   .cover {
-    margin-top: 92px;
-    position: relative;
+   
     display: flex;
-    background-image: url(/russian-travel/img/__background.jpg);
-    background-size: cover;
-    margin-left: 48px;
-    margin-right: 48px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+   
+    margin: 0 auto;
+    min-width: 1184px;
+    /* padding: calc(12.2rem + (100vw - 1024px) / (1280 - 1024) * (245 - 195)) 0 calc(12.2rem + (100vw - 1024px) / (1280 - 1024) * (245 - 195)); */
 }
 
- .cover::after {
-    content: '';
-    width: 0;
-    height: 0;
-    padding-bottom: calc(200 / 320 * 100%);
- }
+.cover_overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.3; 
+}
+
+.cover:hover .cover_overlay {
+    background-color: #2A2C2F;
+    opacity: 0.8;
+    transition: opacity .2s linear;
+}
 
 .cover_link {
     transition: opacity .3s ease-out;
@@ -457,16 +467,12 @@ body {
     text-align: center;
     color: #ffffff;
     font-style: normal;
-}
-
-.cover_link::before {
-    transition: opacity .3s ease;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #2A2C2F;
-    opacity: 0.3;
+    background-image: url(img/__background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 740px;
+    
+    max-width: 100%;
 }
 
 .cover_link:hover::before {
@@ -474,21 +480,24 @@ body {
 }
 
 .cover_title {
+    font-weight: 900;
     font-size: 72px;
     line-height: 76px;
-    font-weight: 900;
     text-align: center;
-    z-index: 1;
-    max-width: 560px;
+    margin-bottom: 16px;
+    z-index: 2;   
+    color: #FFFFFF;
 }
 
 .cover_subtitle {
-    padding-left: 412px;
-    padding-right: 412px;
-    margin-top: 32px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    z-index: 1;
+    text-align: center;
+    width: 90vw;
+    z-index: 2;
+    color: #FFFFFF;
+    max-width: 360px;
 }
 
 /* FOOTER */
