@@ -53,6 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 92px;
 }
 
 .lead_title {
@@ -80,18 +81,30 @@ body {
 }
 
 .lead_tracker {
-    display: none;
+    display: block;
+    position: absolute;
     width: 100%;
-    top: 500px;
-    left: 0;
+    top: 475px;
+    padding-left: 180px;
+    padding-right: 180px; 
     animation: leading 20s linear forwards;
     fill: none;
     stroke: white;
     stroke-width: 2px;
     stroke-dasharray: 1390;
     stroke-dashoffset: 1390;
-  
 }
+
+.lead_caption {
+    line-height: 14px;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    padding-left: 0;
+    align-self: start;
+  }
 
 @keyframes leading {
     to {
@@ -283,22 +296,11 @@ body {
     opacity: 0;
   }
 
-  .lead_caption {
-    line-height: 14px;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-bottom: 92px;
-    margin-top: 8px;
-    padding-left: 0;
-    align-self: start;
-  }
-
   /* INTRO */
   .intro {
     margin-left: 148px;
     max-width: 690px;
+    margin-bottom: 92px;
   }
 
   .intro_title {
@@ -319,7 +321,7 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 18px;
   }
 
   .intro_list-item > span {
@@ -334,13 +336,12 @@ body {
     gap: 16px;
     padding-left: 48px;
     padding-right: 48px;
-    margin-top: 92px;
+    margin-bottom: 92px;
   }
 
   /* PLACES */
 
   .places {
-    margin-top: 92px;
     padding-left: 148px;
     padding-right: 148px;
   }
@@ -352,9 +353,6 @@ body {
                          "image text";
     column-gap: 40px;
     row-gap: 48px;
-  }
-
-  .places_item {
     margin-bottom: 80px;
   }
 
@@ -375,7 +373,8 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 1;
+    line-height: 12px;
+    letter-spacing: 2px;
     color: #AAAAAA;
     margin-bottom: 12px;
   }
@@ -386,6 +385,8 @@ body {
 
   .place_link {
     color: white;
+    font-size: 18px;
+    line-height: 22px;
   }
   
 
@@ -400,6 +401,7 @@ body {
   .place_link:hover,
   .place_link:hover::after {
     opacity: 0.8;
+    transition: opacity .3s ease;
   }
 
   .place_website {
@@ -416,8 +418,14 @@ body {
     line-height: 1.63;
   }
 
+  .place_paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
   .place_paragraph:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   /* COVER */
@@ -428,6 +436,8 @@ body {
     display: flex;
     background-image: url(/russian-travel/img/__background.jpg);
     background-size: cover;
+    margin-left: 48px;
+    margin-right: 48px;
 }
 
  .cover::after {
@@ -493,7 +503,6 @@ body {
 .footer_links {
     display: flex;
     flex-direction: row;
-
 }
 
 .footer_link {
@@ -510,8 +519,14 @@ body {
     list-style: none;
 }
 
+.footer_link:hover {
+    opacity: 0.8;
+    transition: opacity .3s ease;
+}
+
 .footer_copyright {
     font-size: 14px;
+    line-height: 16px;
     font-style: normal;
     font-weight: normal;
 }
@@ -521,6 +536,7 @@ body {
     .header {
         padding-left: 48px;
         padding-right: 48px;
+        margin-bottom: 48px;
     }
     
     .lead {
@@ -530,6 +546,12 @@ body {
 
     .lead_subtitle {
         margin-bottom: 56px;
+    }
+
+    .lead_tracker {
+        top: 475px;
+        padding-left: 87px;
+        padding-right: 87px;
     }
 
     .intro {
@@ -561,6 +583,11 @@ body {
        padding-left: 332px;
        padding-right: 332px;
     }
+
+    .cover {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -576,21 +603,40 @@ body {
     }
 
     .lead_title {
-        padding-left: 24px;
-        padding-right: 24px;
-        font-size: 96px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: calc(96px + 56 * ((100vw - 768px) / (768 - 320)));
+        line-height: calc(100px + 56 * ((100vw - 768px) / (768 - 320)));
+    }
+
+    .lead_subtitle {
+        font-size: calc(30px + 14 * ((100vw - 768px) / (768 - 320)));
+        line-height: calc(36px + 16 * ((100vw - 768px) / (768 - 320)))
     }
 
     .lead_caption {
         padding-left: 24px;
     }
 
+    .lead_tracker {
+        top: 450px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
     .intro {
         padding-left: 24px;
         padding-right: 24px;
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 64px;
         width: 100%;
         max-width: 100%;
+    }
+
+    .intro_title {
+        font-size: calc(54px + 22 * ((100vw - 768px) / (768 - 320)));
+        line-height: calc(58px + 23 * ((100vw - 768px) / (768 - 320)))
     }
 
     .photo-grid {
@@ -608,8 +654,8 @@ body {
     }
 
     .place_title {
-        font-size: 42px;
-        line-height: 46px;
+        font-size: calc(42px + 10 * ((100vw - 768px) / (768 - 320)));
+        line-height: calc(46px + 11 * ((100vw - 768px) / (768 - 320)));
     }
 
     .place_paragraph {
@@ -621,8 +667,8 @@ body {
         margin-top: 90px;
     }
     .cover_title {
-        font-size: 72px;
-        line-height: 76px;
+        font-size: calc(72px + 40 * ((100vw - 768px) / (768 - 320)));
+        line-height: calc(76px + 41 * ((100vw - 768px) / (768 - 320)));
     }
 
     .cover_subtitle {
@@ -635,8 +681,7 @@ body {
     }
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
 
     .header {
         padding-left: 16px;
@@ -652,6 +697,10 @@ body {
     .header_lang_link {
         font-size: 18px;
         line-height: 20px;
+    }
+
+    .lead {
+        margin-bottom: 64px;
     }
 
     .lead_title {
@@ -675,6 +724,17 @@ body {
         padding-left: 16px;
     }
 
+    .lead_tracker {
+        top: 220px;
+        padding-left: 13.5px;
+        padding-right: 13.5px;
+    }
+
+    .intro {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .intro_title {
         font-size: 32px;
         line-height: 1.09;
@@ -684,11 +744,17 @@ body {
         padding-left: 16px;
         padding-right: 16px;
         grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 64px;
     }
 
     .place {
-       display: block;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-areas: "title" "website" "image" "text";
        padding: 0;
+       row-gap: 32px;
+       margin-bottom: 50px;
     }
 
     .place_title {
@@ -703,8 +769,6 @@ body {
         padding-right: 16px;
     }
     
-
-
     .cover_title {
         font-size: 32px;
         line-height: 35px;
