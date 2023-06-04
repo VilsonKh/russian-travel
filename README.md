@@ -1,7 +1,7 @@
 # 🌍 Russian Travel
 The website is dedicated to exploring the beauty and diversity of traveling in Russia. This website aims to provide you with valuable information and inspiration for your journey.
 
-The **Russian Travel** project can be accessed via [this link](https://your-website-url.com/).
+The **Russian Travel** project can be accessed via [this link](https://vilsonkh.github.io/russian-travel/).
 
 ## Project Functionality
 The website offers a wide range of features and resources to enhance your travel experience in Russia. It provides users with access to comprehensive and well-researched textual articles that cover various aspects of Russian travel, such as popular destinations, historical landmarks, cultural experiences, and outdoor adventures. 
