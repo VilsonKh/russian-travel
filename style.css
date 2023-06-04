@@ -71,7 +71,7 @@ body {
 }
 
 .lead__image {
-	background-image: url(img/kalegin-michail-179870-unsplash.jpg);
+	background-image: url(img/kalegin-michail-179870-unsplash.webp);
 	background-repeat: no-repeat;
 	height: calc(100vw * 615 / 1280);
 	background-size: cover;
@@ -475,7 +475,7 @@ body {
 	text-align: center;
 	color: #ffffff;
 	font-style: normal;
-	background-image: url(img/__background.jpg);
+	background-image: url(img/__background.webp);
 	background-size: cover;
 	min-height: calc(100vw * 740 / 1280);
 	width: 100%;
