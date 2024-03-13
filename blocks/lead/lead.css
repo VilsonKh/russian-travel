@@ -27,7 +27,7 @@
 }
 
 .lead__image {
-	background-image: url(../../img/kalegin-michail-179870-unsplash.webp);
+	background-image: url(/img/kalegin-michail-179870-unsplash.webp);
 	background-repeat: no-repeat;
 	height: calc(100vw * 615 / 1280);
 	background-size: cover;
