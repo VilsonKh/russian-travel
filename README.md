@@ -2,7 +2,7 @@
 
 The website is dedicated to exploring the beauty and diversity of traveling in Russia. This website aims to provide you with valuable information and inspiration for your journey.
 
-The **Russian Travel** project can be accessed via [this link](https://devilson.me/russian-travel).
+The **Russian Travel** project can be accessed via [this link](https://projects.devilson.me/russian-travel).
 
 ## Project Functionality
 
