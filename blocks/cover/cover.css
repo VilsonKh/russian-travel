@@ -24,7 +24,7 @@
 	text-align: center;
 	color: #ffffff;
 	font-style: normal;
-	background-image: url(/img/background.webp);
+	background-image: url("../../img/background.webp");
 	background-size: cover;
 	min-height: calc(100vw * 740 / 1280);
 	width: 100%;
